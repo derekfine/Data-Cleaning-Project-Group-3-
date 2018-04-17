@@ -33,7 +33,17 @@ Z | Data for the Z-axis of motion.
 
 ## Task 1 Cleaning Process
 
-
+1. Create data frames by simultaneously importing the text files and converting them into tbl_df format. 
+2. Bind the testing and training rows for the subject, labels and features data. 
+3. Change the column names for the subjects, labels, and features data. 
+4. Remove the first column of “variable_names”.
+5. Change the format of "variable_names" to characters, so it can replace the column names of "data”. 
+6. Combine subjects, labels, and data to create the full dataset.
+7. Use the dplyr chain to select the features that contain the means  and standard deviations.
+8. Group by subject and activity. 
+9. Compute the group averages.  
+10. Change the activity names from numbers to descriptive labels.
+11. Save the final dataset as tidy1.txt
 
 ## Variable Key for *tidy2.txt*, *tidy2_a.txt*, and *tidy2_b.txt*
 
