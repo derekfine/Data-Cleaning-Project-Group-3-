@@ -74,15 +74,6 @@ colnames(data)[1:561]<-variable_names
 fulldata <- bind_cols(subjects, labels, data)
 ```
 
-##Change activity names from numbers to words.
-```
-fulldata$Activity[fulldata$Activity =="1"] <- "WALKING"
-fulldata$Activity[fulldata$Activity =="2"] <- "WALKING_UPSTAIRS"
-fulldata$Activity[fulldata$Activity =="3"] <- "WALKING_DOWNSTAIRS"
-fulldata$Activity[fulldata$Activity =="4"] <- "SITTING"
-fulldata$Activity[fulldata$Activity =="5"] <- "STANDING"
-fulldata$Activity[fulldata$Activity =="6"] <- "LAYING"
-```
 
 ##use dplyr chain to select the correct features (only means and standard deviations), group by subject and activity, and compute group averages
 ```
@@ -91,6 +82,17 @@ final_data<-fulldata%>%
   group_by(Subject, Activity)%>%
   summarize_all(funs(mean))
 ```
+
+##Change activity names from numbers to words.
+```
+final_data$Activity[final_data$Activity =="1"] <- "WALKING"
+final_data$Activity[final_data$Activity =="2"] <- "WALKING_UPSTAIRS"
+final_data$Activity[final_data$Activity =="3"] <- "WALKING_DOWNSTAIRS"
+final_data$Activity[final_data$Activity =="4"] <- "SITTING"
+final_data$Activity[final_data$Activity =="5"] <- "STANDING"
+final_data$Activity[final_data$Activity =="6"] <- "LAYING"
+```
+
 
 ##save final data as tidy1.txt
 ```
