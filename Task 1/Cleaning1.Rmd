@@ -68,7 +68,7 @@ colnames(data)[1:561]<-variable_names
 ```
 
 
-Combine subejcts, labels, and data to create the full dataset. [Nikki/Matthew/Matt]
+Combine subjects, labels, and data to create the full dataset. [Nikki/Matthew/Matt]
 ```
 fulldata <- bind_cols(subjects, labels, data)
 ```
