@@ -68,4 +68,4 @@ CAA | Dummy indicating if Phase I of CAA had been announced; equals 1 if the yea
 5. Capital stock was converted from 1973 USD to 2017 USD.
 6. A factor variable was created to indicate if Phase I restrictions of the Clean Air Act had been announced.
 7. For *tidy2_a.txt*, table represents averages for each company accross all time periods.
-8. For *tidy2_b.txt*, table represents averages for all companies in each time period.
+8. For *tidy2_b.txt*, table represents aggregates for all companies in each time period.
