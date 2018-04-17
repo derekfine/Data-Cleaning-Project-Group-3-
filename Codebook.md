@@ -9,14 +9,17 @@ Activity | Type of motion activity the subject is measured performing.
 ## Abbreviation Key
 Abbreviation | Definition
 ------------- | ----------
-Acc | placeholder
-Body | placeholder
-Gravity | placeholder
-Gyro | placeholder
-Jerk | placeholder
-Mag | placeholder
-Mean | placeholder
-Std | placeholder
+Acc | Indicates data taken from a device's accelerometer.
+Body | Indicates measurements derived from the acceleration of the wearer's body.
+Gravity | Indicates measurements derived from the acceleration of gravity.
+Gyro | Indicates data taken from a device's gyroscope.
+Jerk | Signals derived from the linear acceleration and angular velocity of the wearer's body in three dimensions (XYZ).
+Mag | Calculated magnitude of the signals recorded.
+Mean | The mean value of a given measurement.
+Std | The standard deviation of a given measurement.
+X | Data for the X-axis of motion.
+Y | Data for the Y-axis of motion.
+Z | Data for the Z-axis of motion.
 
 
 ## Data for Task 1
