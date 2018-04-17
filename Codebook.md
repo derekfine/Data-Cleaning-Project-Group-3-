@@ -4,9 +4,10 @@
 Variable Name | Definition
 ------------- | ----------
 Subject | Test subject unique identifier for each of the 30 participants.
-Activity | Type of motion activity the subject is measured performing.
+Activity | Type of motion activity the subject is measured performing: walking, walking upstairs, walking downstairs, sitting, standing, or laying.
+Features | Detailed measurements of specific types of signals captured while the subjects performed the observed activities.
 
-## Activity Abbreviation Key
+## Feature Abbreviation Key
 Each activity has a description comprised of a combination of abbreviated terms. An example description, "tBodyAcc-mean()-X" would translate to the *mean* measurement in the *time domain,* of *acceleration* from the wearer's *body,* across the *X-axis*. 
 
 Abbreviation | Definition
