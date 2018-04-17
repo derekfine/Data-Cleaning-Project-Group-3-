@@ -5,24 +5,42 @@ date: "4/15/2018"
 output: html_document
 ---
 
+<<<<<<< HEAD
 # Ensure the dplyr and tidyr libraries are installed. [Matt/Nikki]
+=======
+# ECON 386 - Group 3 - Data Cleaning Project - Task 1
+
+Ensure the dplyr and tidyr libraries are installed.
+>>>>>>> ec8acfa2f8be14bf223a46a31c00356249c0f86b
 ```
 install.packages("dplyr")
 install.packages("tidyr")
 ```
 
+<<<<<<< HEAD
 # Ensure the dplyr and tidyr libraries have been called. [Matt/Nikki]
+=======
+Ensure the dplyr and tidyr libraries have been called.
+>>>>>>> ec8acfa2f8be14bf223a46a31c00356249c0f86b
 ```
 library(dplyr)
 library(tidyr)
 ```
 
+<<<<<<< HEAD
 # Set the working directory to the folder of choice, which contains the relevant raw data files provided for this project. [Matt/Nikki]
+=======
+Set the working directory to the folder of choice, which contains the relevant raw data files provided for this project.
+>>>>>>> ec8acfa2f8be14bf223a46a31c00356249c0f86b
 ```
 setwd("INSERT YOUR DIRECTORY FILEPATH HERE")
 ```
 
+<<<<<<< HEAD
 # Assign tbl_df names and import the relevant text files into R Studio converted to tbl_df format. [Matt/Nikki]
+=======
+Assign tbl_df names and import the relevant text files into R Studio converted to tbl_df format. 
+>>>>>>> ec8acfa2f8be14bf223a46a31c00356249c0f86b
 ```
 test_data <-tbl_df(read.table("X_test.txt"))
 train_data <-tbl_df(read.table("X_train.txt"))
@@ -34,37 +52,61 @@ test_subject <-tbl_df(read.table("subject_test.txt"))
 train_subject <-tbl_df(read.table("subject_train.txt"))
 ```
 
+<<<<<<< HEAD
 # Bind the testing and training rows for the subjects, labels, and data, respectively. [Nikki]
+=======
+Bind the testing and training rows for the subjects, labels, and data, respectively.
+>>>>>>> ec8acfa2f8be14bf223a46a31c00356249c0f86b
 ```
 subjects <-bind_rows(test_subject, train_subject)
 labels <-bind_rows(test_labels, train_labels)
 data <-bind_rows(test_data, train_data)
 ```
 
+<<<<<<< HEAD
 #Change the variable names of subjects, labels, and data, respectively. [Matt]
+=======
+Change the variable names of subjects, labels, and data, respectively.
+>>>>>>> ec8acfa2f8be14bf223a46a31c00356249c0f86b
 ```
 colnames(subjects)[1]<-"Subject"
 colnames(labels)[1]<-"Activity"
 variable_names<-variable_names$V2
 ```
 
+<<<<<<< HEAD
 #Remove the first column of "variable_names" which is unnecessary. [Matthew]
+=======
+Remove the first column of "variable_names" which is unnecessary.
+>>>>>>> ec8acfa2f8be14bf223a46a31c00356249c0f86b
 ```
 variable_names <-as.character(variable_names)
 ```
 
+<<<<<<< HEAD
 #Change the format of "variable_names" to characters, so it can replace the column names of "data". [Matthew]
+=======
+Change the format of "variable_names" to characters, so it can replace the column names of "data".
+>>>>>>> ec8acfa2f8be14bf223a46a31c00356249c0f86b
 ```
 colnames(data)[1:561]<-variable_names
 ```
 
+<<<<<<< HEAD
 #Combine subejcts, labels, and data to create the full dataset. [Nikki/Matthew/Matt]
+=======
+Combine subjects, labels, and data to create the full dataset.
+>>>>>>> ec8acfa2f8be14bf223a46a31c00356249c0f86b
 ```
 fulldata <- bind_cols(subjects, labels, data)
 ```
 
 
+<<<<<<< HEAD
 #use dplyr chain to select the correct features (only means and standard deviations), group by subject and activity, and compute group averages [Matthew]
+=======
+Use dplyr chain to select the correct features (only means and standard deviations), group by subject and activity, and compute group averages.
+>>>>>>> ec8acfa2f8be14bf223a46a31c00356249c0f86b
 ```
 final_data<-fulldata%>%
   select(matches('Subject|Activity|mean|std'), -contains("angle"))%>%
@@ -72,7 +114,11 @@ final_data<-fulldata%>%
   summarize_all(funs(mean))
 ```
 
+<<<<<<< HEAD
 #Change activity names from numbers to descriptive labels.[Nikki]
+=======
+Change activity names from numbers to descriptive labels.
+>>>>>>> ec8acfa2f8be14bf223a46a31c00356249c0f86b
 ```
 final_data$Activity[final_data$Activity =="1"] <- "WALKING"
 final_data$Activity[final_data$Activity =="2"] <- "WALKING_UPSTAIRS"
@@ -83,7 +129,11 @@ final_data$Activity[final_data$Activity =="6"] <- "LAYING"
 ```
 
 
+<<<<<<< HEAD
 ##Save the final dataset as tidy1.txt [Matthew]
+=======
+Save the final dataset as tidy1.txt
+>>>>>>> ec8acfa2f8be14bf223a46a31c00356249c0f86b
 ```
 write.table(final_data, "tidy1.txt", row.names = F, quote = F)
 ```
