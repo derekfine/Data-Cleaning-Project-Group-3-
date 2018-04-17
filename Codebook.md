@@ -1,7 +1,23 @@
 # Group 3 Codebook
 
 ## Variable Key for Task 1
-Will add here.
+Variable Name | Definition
+------------- | ----------
+Subject | Test subject unique identifier for each of the 30 participants.
+Activity | Type of motion activity the subject is measured performing.
+
+## Abbreviation Key
+Abbreviation | Definition
+------------- | ----------
+Acc | placeholder
+Body | placeholder
+Gravity | placeholder
+Gyro | placeholder
+Jerk | placeholder
+Mag | placeholder
+Mean | placeholder
+Std | placeholder
+
 
 ## Data for Task 1
 
