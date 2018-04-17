@@ -48,7 +48,7 @@ data <-bind_rows(test_data, train_data)
 ```
 
 
-Change the variable names of subjects, labels, and data, respectively. [Matt]
+Change the column names of subjects, labels, and data, respectively. [Matt]
 ```
 colnames(subjects)[1]<-"Subject"
 colnames(labels)[1]<-"Activity"
