@@ -1,5 +1,12 @@
 # Group 3 Codebook
 
+## Variable Key for Task 1
+Will add here.
+
+## Data for Task 1
+
+## Task 1 Cleaning Process
+
 ## Variable Key for *tidy2.txt*, *tidy2_a.txt*, and *tidy2_b.txt*
 
 Variable Name | Definition
