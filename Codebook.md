@@ -6,22 +6,25 @@ Variable Name | Definition
 Subject | Test subject unique identifier for each of the 30 participants.
 Activity | Type of motion activity the subject is measured performing.
 
-## Abbreviation Key
+## Activity Abbreviation Key
+Each activity has a description comprised of a combination of abbreviated terms. An example description, "tBodyAcc-mean()-X" would translate to the *mean* measurement in the *time domain,* of *acceleration* from the wearer's *body,* across the *X-axis*. 
+
 Abbreviation | Definition
 ------------- | ----------
 Acc | Indicates data taken from a device's accelerometer.
 Body | Indicates measurements derived from the acceleration of the wearer's body.
+f | Indicates frequency domain signals.
 Gravity | Indicates measurements derived from the acceleration of gravity.
 Gyro | Indicates data taken from a device's gyroscope.
 Jerk | Signals derived from the linear acceleration and angular velocity of the wearer's body in three dimensions (XYZ).
 Mag | Calculated magnitude of the signals recorded.
 Mean | The mean value of a given measurement.
 Std | The standard deviation of a given measurement.
+t | Denotes time doman signal. 
 X | Data for the X-axis of motion.
 Y | Data for the Y-axis of motion.
 Z | Data for the Z-axis of motion.
-f | Indicates frequency domain signals.
-t | Denotes time. 
+
 
 ## Data for Task 1
 
