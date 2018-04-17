@@ -20,11 +20,16 @@ Std | The standard deviation of a given measurement.
 X | Data for the X-axis of motion.
 Y | Data for the Y-axis of motion.
 Z | Data for the Z-axis of motion.
-
+f | Indicates frequency domain signals.
+t | Denotes time. 
 
 ## Data for Task 1
 
+
+
 ## Task 1 Cleaning Process
+
+
 
 ## Variable Key for *tidy2.txt*, *tidy2_a.txt*, and *tidy2_b.txt*
 
