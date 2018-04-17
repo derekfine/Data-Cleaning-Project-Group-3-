@@ -1,39 +1,28 @@
 ---
-title: "Task 1 Working MD"
+title: "Task 1 Markdown File"
 author: "Group 3"
 date: "4/15/2018"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
+# Ensure the dplyr and tidyr libraries are installed.
 ```
 install.packages("dplyr")
 install.packages("tidyr")
 ```
-## Ensure dplyr and tidyr are installed.
 
+# Ensure the dplyr and tidyr libraries have been called.
 ```
 library(dplyr)
 library(tidyr)
 ```
-## Ensure dplyr and tidry have been called.
 
+# Set the working directory to the folder of choice, which contains the relevant raw data files provided for this project.
 ```
 setwd("INSERT YOUR DIRECTORY FILEPATH HERE")
 ```
-## Set the working directory to the folder of choice, which contains the relevant raw data files provided for this project.
 
-
-## Assign tbl_df names and import the relevant text files into R Studio converted to tbl_df format. 
+# Assign tbl_df names and import the relevant text files into R Studio converted to tbl_df format. 
 ```
 test_data <-tbl_df(read.table("X_test.txt"))
 train_data <-tbl_df(read.table("X_train.txt"))
@@ -45,37 +34,37 @@ test_subject <-tbl_df(read.table("subject_test.txt"))
 train_subject <-tbl_df(read.table("subject_train.txt"))
 ```
 
-## Bind the testing and training rows for the subjects, labels, and data, respectively.
+# Bind the testing and training rows for the subjects, labels, and data, respectively.
 ```
 subjects <-bind_rows(test_subject, train_subject)
 labels <-bind_rows(test_labels, train_labels)
 data <-bind_rows(test_data, train_data)
 ```
 
-##Change the variable names of subjects, labels, and data, respectively.
+#Change the variable names of subjects, labels, and data, respectively.
 ```
 colnames(subjects)[1]<-"Subject"
 colnames(labels)[1]<-"Activity"
 variable_names<-variable_names$V2
 ```
 
-##Remove the first column of "variable_names" which is unnecessary.
+#Remove the first column of "variable_names" which is unnecessary.
 ```
 variable_names <-as.character(variable_names)
 ```
 
-##Change the format of "variable_names" to characters, so it can replace the column names of "data".
+#Change the format of "variable_names" to characters, so it can replace the column names of "data".
 ```
 colnames(data)[1:561]<-variable_names
 ```
 
-##Combine subejcts, labels, and data to create the full dataset.
+#Combine subejcts, labels, and data to create the full dataset.
 ```
 fulldata <- bind_cols(subjects, labels, data)
 ```
 
 
-##use dplyr chain to select the correct features (only means and standard deviations), group by subject and activity, and compute group averages
+#use dplyr chain to select the correct features (only means and standard deviations), group by subject and activity, and compute group averages
 ```
 final_data<-fulldata%>%
   select(matches('Subject|Activity|mean|std'), -contains("angle"))%>%
@@ -83,7 +72,7 @@ final_data<-fulldata%>%
   summarize_all(funs(mean))
 ```
 
-##Change activity names from numbers to words.
+#Change activity names from numbers to descriptive labels.
 ```
 final_data$Activity[final_data$Activity =="1"] <- "WALKING"
 final_data$Activity[final_data$Activity =="2"] <- "WALKING_UPSTAIRS"
@@ -94,7 +83,7 @@ final_data$Activity[final_data$Activity =="6"] <- "LAYING"
 ```
 
 
-##save final data as tidy1.txt
+##Save the final dataset as tidy1.txt
 ```
 write.table(final_data, "tidy1.txt", row.names = F, quote = F)
 ```
