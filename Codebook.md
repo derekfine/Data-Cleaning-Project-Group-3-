@@ -28,6 +28,18 @@ Z | Data for the Z-axis of motion.
 
 
 ## Data for Task 1
+The raw data for Task 1 was provided in eight (8) plain text files. Each of these files represented a portion of the overall dataset that our group combined and refined to create our final product. 
+
+Data File | Description
+------------- | ----------
+X_test.txt | Testing data for all measured features. Testing data comprised 30% of the dataset.
+X_train.txt | Training data for all measured features. Training data comprised 70% of the dataset.
+Y_test.txt | A file comprised of a single column of values which mate with X_test.txt.
+Y_train.txt | A file comprised of a single column of values which mate with Y_test.txt
+activity_labels.txt | A file with two columns which match a numeric value code 1:6 with the proper activity.
+features.txt | A text file with all 561 feature variables captured in data collection. For this exercise, we only used a portion of these features.
+subject_test.txt | A file with a column of numbers 1:30 corresponding to the subjects in the test data.
+subject_train.txt | A file with a column of numbers 1:30 corresponding to the subjects in the training data.
 
 
 
