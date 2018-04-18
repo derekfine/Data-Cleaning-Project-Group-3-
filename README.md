@@ -1,6 +1,6 @@
 
 # Data-Cleaning-Project-Group-3
-## Main Repository for the Data and Cleaning Project
+## Main Repository for Group 3's Data and Cleaning Project
 
 ### Nikki Barden, Derek Fine, Matt Hanula, Matt Webber, Dylan Chen
 ECON386 - Big Data and Business
@@ -11,8 +11,8 @@ San Diego, CA
 Our group had two tasks: Task 1 and Task 2. In order to accomplish Task 1, we used the human activity recognition using smartphone's data set to practice harmonizing, merging and cleaning a messy dataset. Similarly for Task 2, we used a data set related to decomposing electric power plant emissions to practice cleaning, transforming and partitioning data. All of the code and files relating to these exercises can be found in the /data-cleaning-project-group-3-/ repository.
 
 #### Before You Get Started
-install.packages("dplyr")
-install.packages("tidyr")
+- install.packages("dplyr")
+- install.packages("tidyr")
 
 #### The repository includes the following files:
 - *CodeBook.md* : contains the final code for Task 1 and Task 2
