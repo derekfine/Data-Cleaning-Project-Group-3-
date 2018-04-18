@@ -74,7 +74,7 @@ fulldata <- bind_cols(subjects, labels, data)
 ```
 
 
-Use dplyr chain to select the correct features (only means and standard deviations), group by subject and activity, and compute group averages [Matthew]
+Use dplyr chain to select the correct features (only means and standard deviations), group by subject and activity, and compute group averages. [Matthew]
 ```
 final_data<-fulldata%>%
   select(matches('Subject|Activity|mean|std'), -contains("angle"))%>%
@@ -83,7 +83,7 @@ final_data<-fulldata%>%
 ```
 
 
-Change activity names from numbers to descriptive labels.[Nikki]
+Change activity names from numbers to descriptive labels. [Nikki]
 ```
 final_data$Activity[final_data$Activity =="1"] <- "WALKING"
 final_data$Activity[final_data$Activity =="2"] <- "WALKING_UPSTAIRS"
