@@ -17,7 +17,7 @@ Our group had two tasks: Task 1 and Task 2. In order to accomplish Task 1, we us
 - install.packages("tidyr")
 
 #### The repository includes the following files:
-- *CodeBook.md* : contains the final code for Task 1 and Task 2
+- *CodeBook.md* : a markdown file that contains the variable keys for the cleaned datasets, the original sources of raw data, and steps taken during the cleaning process
 - *README.md* 
 - **Task 1** folder
   - *Cleaning1.Rmd* : Markdown file with code for Task 1 with accompanying notes referencing steps taken and the contributions of team members.
