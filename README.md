@@ -24,10 +24,10 @@ Our group had two tasks: Task 1 and Task 2. In order to accomplish Task 1, we us
   - *tidy1.txt* : A concise dataset derived from the main dataset, which was built using separate .txt files provided for this exercise.
 
 - **Task 2** folder 
- - *Cleaning2.r*: an r script file containing the code and annotated steps for cleaning the Task 2 data
-  - *tidy2.txt*: a text file containing the cleaned data for Task 2
-  - *tidy2_a.txt*: a text file containing a table of variable averages for each plant across all years
-  - *tidy2_b.txt*: a text file containing a table of variable aggregates of all plants for each year
+    - *Cleaning2.r*: an r script file containing the code and annotated steps for cleaning the Task 2 data
+    - *tidy2.txt*: a text file containing the cleaned data for Task 2
+    - *tidy2_a.txt*: a text file containing a table of variable averages for each plant across all years
+    - *tidy2_b.txt*: a text file containing a table of variable aggregates of all plants for each year
 
 
 
