@@ -21,7 +21,7 @@ Jerk | Signals derived from the linear acceleration and angular velocity of the 
 Mag | Calculated magnitude of the signals recorded.
 Mean | The mean value of a given measurement.
 Std | The standard deviation of a given measurement.
-t | Denotes time doman signal. 
+t | Denotes time domain signal. 
 X | Data for the X-axis of motion.
 Y | Data for the Y-axis of motion.
 Z | Data for the Z-axis of motion.
